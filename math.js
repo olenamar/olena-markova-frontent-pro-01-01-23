@@ -1,12 +1,8 @@
-const array = [];
+arr = [2, 5, 6, 80];
 
-Array.isArray(array);
-console.log(array);
+function arrayRand(arr) {
+    let rand = Math.floor(Math.random() * arr.length);
+    return arr[rand];    
+}
 
-function randomElement(array) {
-    return Math.random() * array;
-  }
-    
-  console.log(randomElement(Math.random()));
-
-  
+console.log(arrayRand(arr));
